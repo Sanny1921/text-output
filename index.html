@@ -85,7 +85,7 @@
         color:black;
         padding: 0;
         display: block;
-        visibility: hidden;
+        /* visibility: hidden; */
         /* visibility: visible; */
         margin-top: 0;
         font-size: 15px;
@@ -98,7 +98,7 @@
     <main>
         <div id="logintab">
             <h3>YAHA DIKHEGA:</h3>
-            <p id="yahi">Yahi dikhega</p>
+            <p id="yahi">Yahi dikhega thoda intzaar karo...</p>
             <form id="kpo">
                 <h3 id="likho">Yaha likhoge tab hi upper dikhega:</h3>
                 <input type="text" placeholder="jaldi jaldi likho yaar..." id="nam"/>
@@ -112,11 +112,11 @@
             let name= document.getElementById('nam')
             if (name.value.trim() === ""){
                 document.getElementById('yahi').innerText="KUCH TO LIKHO BHAI!!!"
-                document.getElementById('yahi').style.visibility="visible"
+                // document.getElementById('yahi').style.visibility="visible"
             }
             else{
                 document.getElementById('yahi').innerText= name.value
-                document.getElementById('yahi').style.visibility="visible"
+                // document.getElementById('yahi').style.visibility="visible"
             }
             name.value=""
         })
